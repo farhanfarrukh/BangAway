@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/2.9.0"
+        id        = "org.bangon.bangaway"
+        versionCode="10"
+        version   = "0.1beta">
+
+    <!-- versionCode is optional and Android only -->
+
+    <name>Bang Away</name>
+
+    <description>
+        Keeping employees in touch
+    </description>
+
+    <author href="http://bang-on.net" email="bangonnet@gmail.com">
+        Farhan Farrukh
+    </author>
+
+</widget>
