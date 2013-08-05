@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Blog</title>
+	<%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+	<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+	<%= csrf_meta_tags %>
+	</head>
+<body>
+
+	<h1>SHOW</h1>
+	<p>
+		<strong>Title:</strong>
+		<%= @post.title %>
+	</p>
+
+	<p>
+		<strong>Text:</strong>
+		<%= @post.text %>
+	</p>
+
+	<h2>Comments</h2>
+	
+	<%= render @post.comments %>
+
+	<h2>Add a comment:</h2>
+	
+	<%= render "comments/form" %>
+
+	<%= link_to 'Edit Post', edit_post_path(@post) %> |
+	<%= link_to 'Back to Posts', posts_path %>
+</body>
+</html>
